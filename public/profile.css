@@ -1,0 +1,40 @@
+.navbarloginWelcome{
+  list-style: none;
+  display: inline;
+  font-family:"helvetica";
+  color:white;
+  font-size: 20px;
+  margin-right: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.navbarloginSignout{
+  list-style: none;
+  display: inline;
+  font-family:"helvetica";
+  color:white;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.navbarloginSignout:active{
+  text-decoration: none;
+  color:white;
+}
+.navbarloginSignout:hover{
+  text-decoration: none;
+  color:gray;
+}
+.ProfileDiv{
+  background-color: #1F2130;
+  width:100%;
+  height:auto;
+}
+.tr{
+  border-bottom: 1px solid black;
+}
+.RosterTable{
+height:auto;
+width:auto;
+}

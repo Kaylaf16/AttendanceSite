@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "dsrhxino",
+    "password": "-F8ahSBRTy7RIA1f3DgiT8kUduHSCb6r",
+    "database": "dsrhxino",
+    "host": "baasu.db.elephantsql.com",
+    "dialect": "postgres"
+    },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
