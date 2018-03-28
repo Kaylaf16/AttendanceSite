@@ -1,21 +1,49 @@
+
 <div class ="ProfileDiv">
-<div>
   <img src= "images/Logo.png" class = "logonavbar"/>
   <ul class ="navbarlogin">
-    <li class = "navbarloginWelcome">Welcome Back, {{{ User }}}!</li>
+    <li class = "navbarloginWelcome">Welcome Back, {{{ Id }}}!</li>
     <li class = "navbarloginSignout"><a href = "/logout" class ="navbarloginSignupLink">SIGN OUT</a></li>
   </ul>
+  <div class="tablecntrls">
+<Button class = "RefreshClass" onclick="test()">Refresh Data</Button>
+  <button id="dropbtn" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Class Selection
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" id = "dropmenu">
+    {{#each classid}} {{#each classes}}
+      <li onclick= "RosterTable(this)">{{ classid }}{{ classes }}</li>
+      {{/each}} {{/each}}
+  </ul>
+
 </div>
+<div class = "row" id="rowProfile">
+  <div class="col-sm-6">
 <table class ="RosterTable"> <!--Roster Table by Class (Display class info on top)-->
-<tr>
+<tr class = "rowclass" >
   <th class ="RosterTableth">Student</th><th class ="RosterTableth"> Student ID </th>
 </tr>
-</table>
-
-<Button>Refresh Data</Button> <!--Will refresh student present table and statistics today -->
-<table> <!--Present Now table. Use timein from class information and Student Time in to yield these results-->
+{{#each students}}
 <tr>
-  <th>Student</th><th>Time Arrived </th>
+  <td>{{ @key }}</td> <td>{{ this }}</td>
 </tr>
+  {{/each}}
 </table>
+</div>
+  <div class="col-sm-6">
+ <!--Will refresh student present table and statistics today -->
+<table class ="RosterTable"> <!--Roster Table by Class (Display class info on top)-->
+<tr class = "rowclass" >
+  <th class ="RosterTableth">Student</th><th class ="RosterTableth"> Student ID </th>
+</tr>
+  <tr>
+    <td>Mock info</td>
+    <td>Mock info</td>
+  </tr>
+    <tr>
+    <td>Mock info</td>
+    <td>Mock info</td>
+  </tr>
+</table>
+</div>
+</div>
 </div>

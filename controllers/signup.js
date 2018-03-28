@@ -18,7 +18,8 @@ router.post('/',function(req,res){
     console.log("goog");
     res.redirect('/login')
   });
-}).catch(()=>{
+}).catch((e)=>{
+  console.log(e);
   res.render('signup');
   console.log("hi");
 });

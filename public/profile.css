@@ -3,9 +3,9 @@
   display: inline;
   font-family:"helvetica";
   color:white;
-  font-size: 20px;
-  margin-right: 40px;
-  font-weight: 300;
+  font-size: 18px;
+  margin-right: 10px;
+  font-weight: lighter;
   letter-spacing: 2px;
 }
 .navbarloginSignout{
@@ -13,9 +13,10 @@
   display: inline;
   font-family:"helvetica";
   color:white;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: lighter;
   letter-spacing: 2px;
+
 }
 
 .navbarloginSignout:active{
@@ -27,14 +28,92 @@
   color:gray;
 }
 .ProfileDiv{
-  background-color: #1F2130;
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(27, 0, 0, 0)), url('images/LoginBackground.jpg');
   width:100%;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
   height:auto;
+  padding-bottom: 300px;
+  padding-top: 10px;
+}
+.navbarprofile{
+  background:#1e272e;
+  padding-bottom:20px;
+}
+#rowProfile{
+padding:0px;
+margin-left: 2%;
+margin-right: auto;
 }
 .tr{
   border-bottom: 1px solid black;
 }
+.RefreshClass{
+  border-radius: 15px;
+  width:150px;
+  height:30px;
+  background: #45aaf2;
+  border:none;
+  color:white;
+  margin-left: 100px;
+}
+
+.RefreshClass:hover{
+  box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.25);
+}
+body{
+  margin:0px;
+  padding:0px;
+}
+td{
+text-align:center;
+  opacity:0.7;
+  height:40px;
+  font-size:14px;
+  font-weight:300;
+  font-family: 'avenir', sans-serif;
+ color:white;
+    background-color:black;
+}
+.rowclass{
+  box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.25);
+}
+
 .RosterTable{
 height:auto;
+  background:white;
+  border-collapse: collapse;
 width:auto;
+margin:30px;
+}
+
+.RosterTableth{
+  font-family: 'avenir', sans-serif;
+  font-size:15px;
+   color:#66CC99;
+  font-weight:300;
+  background-color:#1e272e;
+  height:40px;
+  border:none;
+  width:200px;
+  opacity:0.8;
+  text-align:center;
+}
+#dropbtn{
+  background-color: transparent;
+  color:white;
+  border:none;
+  font-weight:300;
+  font-size:15px;
+  letter-spacing:1px;
+  font-family:"avenir"
+}
+#dropmenu{
+  border:none;
+  font-weight:200;
+}
+.tablecntrls{
+  padding-top: 80px;
+margin-bottom: 60px;
 }

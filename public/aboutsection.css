@@ -1,0 +1,80 @@
+.aboutsecintro {
+    background-color:red;
+    background:linear-gradient(#65C6BB,#2ECC71);
+    height:auto;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: 50px;
+}
+.rowinfo{
+  color:white;
+  font-size:20px;
+  font-weight: 300;
+  font-family: "avenir";
+}
+.aboutinfheader{
+  padding-top: 70px;
+  text-align: center;
+  color:white;
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.aboutinfone{
+  padding-top: 20px;
+  letter-spacing: .5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+    font-weight: 400;
+}
+.getstartedp{
+color:#59ABE3;
+font-weight:200;
+padding-top: 10px;
+text-align: center;
+font-size: 18px;
+
+}
+.ion-load-c{
+  color:white;
+  font-size:35px;
+  margin-bottom:10px;
+}
+.ion-ios-pulse{
+  color:white;
+  font-size:35px;
+  margin-bottom:10px;
+}
+.ion-wand{
+  color:white;
+  font-size:35px;
+  margin-bottom:10px;
+}
+.row{
+  padding-top: 80px;
+  text-align: center;
+}
+.col-sm-4{
+  padding: 35px;
+}
+.rowinfo{
+  padding:20px;
+}
+.rowheader{
+  font-size: 20px;
+  color:white;
+}
+.getstarted{
+
+  text-decoration: none;
+  color:#2574A9;
+}
+.getstarted:hover{
+  text-decoration: none;
+  color:white;
+}

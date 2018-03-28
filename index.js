@@ -12,6 +12,7 @@ app.use(expressSession(({ secret: 'keyboard cat', resave: false, saveUninitializ
 app.use(passport.initialize());
 app.use(passport.session());
 
+
 const bodyParser = require('body-parser');
 var handlebars = require('express-handlebars');
  // specifying app engine and templating
