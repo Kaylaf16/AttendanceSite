@@ -8,8 +8,9 @@ for(var i = 0; i < classes.length;i++)
          classtotal.push(classes[i].dataValues.subject +" "+ classes[i].dataValues.classId)
       }
 
-    return classtotal;
+
 }
+return classtotal;
 
 }
 exports.getclassesid = function(classes){

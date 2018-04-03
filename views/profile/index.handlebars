@@ -2,47 +2,42 @@
 <div class ="ProfileDiv">
   <img src= "images/Logo.png" class = "logonavbar"/>
   <ul class ="navbarlogin">
-    <li class = "navbarloginWelcome">Welcome Back, {{{ Id }}}!</li>
+    <li class = "navbarloginWelcome">Welcome Back, {{{ User }}}!</li>
     <li class = "navbarloginSignout"><a href = "/logout" class ="navbarloginSignupLink">SIGN OUT</a></li>
   </ul>
   <div class="tablecntrls">
-<Button class = "RefreshClass" onclick="test()">Refresh Data</Button>
+<Button class = "RefreshClass" onclick="AttendanceTable()">Refresh Data</Button>
   <button id="dropbtn" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Class Selection
   <span class="caret"></span></button>
   <ul class="dropdown-menu" id = "dropmenu">
-    {{#each classid}} {{#each classes}}
-      <li onclick= "RosterTable(this)">{{ classid }}{{ classes }}</li>
-      {{/each}} {{/each}}
+    {{#each classid}}
+      <li onclick= "RosterTable(this)">{{ this }}</li>
+      {{/each}}
   </ul>
 
 </div>
 <div class = "row" id="rowProfile">
   <div class="col-sm-6">
 <table class ="RosterTable"> <!--Roster Table by Class (Display class info on top)-->
+  <thead>
 <tr class = "rowclass" >
   <th class ="RosterTableth">Student</th><th class ="RosterTableth"> Student ID </th>
 </tr>
-{{#each students}}
-<tr>
-  <td>{{ @key }}</td> <td>{{ this }}</td>
-</tr>
-  {{/each}}
+</thead>
+<tbody id = "rostertablebody">
+</tbody>
 </table>
 </div>
   <div class="col-sm-6">
  <!--Will refresh student present table and statistics today -->
-<table class ="RosterTable"> <!--Roster Table by Class (Display class info on top)-->
+<table class ="RosterTable">
+  <thead>
 <tr class = "rowclass" >
-  <th class ="RosterTableth">Student</th><th class ="RosterTableth"> Student ID </th>
+  <th class ="RosterTableth">Student</th><th class ="RosterTableth"> Student ID </th><th class ="RosterTableth"> Time In </th>
 </tr>
-  <tr>
-    <td>Mock info</td>
-    <td>Mock info</td>
-  </tr>
-    <tr>
-    <td>Mock info</td>
-    <td>Mock info</td>
-  </tr>
+</thead>
+  <tbody id ="attendancetablebody">
+</tbody>
 </table>
 </div>
 </div>
